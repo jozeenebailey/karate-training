@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>examples.conduitApp.tests.HomePage</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-07-28 09:29:51 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Get all tags</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:13]"><span>[2:13]</span> <span>Get 10 articles from the page</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/conduitApp/tests/HomePage.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Tests for the Home Page</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Get all tags</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2540</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://conduit.productionready.io/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">09:29:49.394 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;tags&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2517</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">09:29:50.246 request:
+1 &gt; GET https://conduit.productionready.io/api/tags
+1 &gt; Host: conduit.productionready.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_291)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:29:51.959 response time in milliseconds: 1712
+1 &lt; 200
+1 &lt; Date: Wed, 28 Jul 2021 08:29:51 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; ETag: W/&quot;cf427065c20042d43e8c90db3eecea65&quot;
+1 &lt; Status: 200 OK
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: 19780d7b-a219-477c-800a-087cba45cf80
+1 &lt; X-Runtime: 1.168689
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=0iWcxMzyiYU3wJxlSrWK%2FzVa5USdT6dG9bfPXQzhU7MMEhkQrf0qQ7EwmyCawYNOq7fpoSlUfO%2FZadUcPj1iw5yZMFojf%2FFyWiLkZ2R4q59rHLxK3K5%2B%2FzoCauPnlyy6gtfOiRHxIhjo%2BVwmfQ%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 675cbdf768f1073a-LHR
+1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
+{&quot;tags&quot;:[&quot;\u200C&quot;,&quot;\u200C\u200C&quot;,&quot;\u200C\u200C\u200C&quot;,&quot;\u200C\u200C\u200C\u200C&quot;,&quot;\u200C\u200C\u200C\u200C\u200C&quot;,&quot;\u200C\u200C\u200C\u200C\u200C\u200C\u200C&quot;,&quot;\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C&quot;,&quot;\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C&quot;,&quot;\u200C\u200C\u200C\u200C\u200C\u200C&quot;,&quot;\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C&quot;,&quot;HuManIty&quot;,&quot;Hu\u200CMan\u200CIty&quot;,&quot;Gandhi&quot;,&quot;HITLER&quot;,&quot;SIDA&quot;,&quot;BlackLivesMatter&quot;,&quot;Black\u200CLives\u200CMatter&quot;,&quot;test&quot;,&quot;dragons&quot;,&quot;butt&quot;]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.tags contains [&#39;Gandhi&#39;, &#39;HITLER&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.tags !contains &#39;Hitler&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:13]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:13]</span>
+                <span class="scenario-name">Get 10 articles from the page</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1932</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:13]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://conduit.productionready.io/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">09:29:49.394 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>params { limit: 10, offset:0 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">77</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1853</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">09:29:50.246 request:
+1 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+1 &gt; Host: conduit.productionready.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_291)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:29:51.362 response time in milliseconds: 1106
+1 &lt; 200
+1 &lt; Date: Wed, 28 Jul 2021 08:29:51 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; ETag: W/&quot;e5e05ee700bc95bed42583cb739c4b9a&quot;
+1 &lt; Status: 200 OK
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: 652a666d-d9f8-4df9-a73c-80413b19aaf3
+1 &lt; X-Runtime: 0.338307
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=ZuShA5S%2F1WtBDV9ohxV8RAfbZnDmlYltbNO8jsIxZGNHQ3KqLJ%2FvVgkrMKQ4pKUeUuhpF1y7SCsV%2BYolXTv1Q%2FB2o6Ra4cygP8lSjY893uBSLwfnkiNAT4NnX9aioq6779Jz0YaDfSPuwq93WQ%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 675cbdf7689c078e-LHR
+1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
+{&quot;articlesCount&quot;:500,&quot;articles&quot;:[{&quot;tagList&quot;:[&quot;!@#$%&quot;],&quot;createdAt&quot;:&quot;2021-07-28T08:29:48.177Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;alexalexd&quot;},&quot;description&quot;:&quot;!@#$%&quot;,&quot;title&quot;:&quot;!@#$%&quot;,&quot;body&quot;:&quot;!@#$%&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;-6zlwvd&quot;,&quot;updatedAt&quot;:&quot;2021-07-28T08:29:48.177Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[&quot;Tag&quot;],&quot;createdAt&quot;:&quot;2021-07-28T08:29:41.350Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;alexalexd&quot;},&quot;description&quot;:&quot;about article 1&quot;,&quot;title&quot;:&quot;article 1&quot;,&quot;body&quot;:&quot;body article 1&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;article-1-k2f2q&quot;,&quot;updatedAt&quot;:&quot;2021-07-28T08:29:41.350Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-07-28T08:29:32.281Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/www.clipartmax.com\/png\/middle\/149-1498081_karate-cartoon-stock-photography-stock-illustration-karate-kid-icon.png&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;KarateKid&quot;},&quot;description&quot;:&quot;For test&quot;,&quot;title&quot;:&quot;Test&quot;,&quot;body&quot;:&quot;My second test &quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;test-tr9inq&quot;,&quot;updatedAt&quot;:&quot;2021-07-28T08:29:32.281Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-07-28T08:29:31.567Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/www.clipartmax.com\/png\/middle\/149-1498081_karate-cartoon-stock-photography-stock-illustration-karate-kid-icon.png&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;KarateKid&quot;},&quot;description&quot;:&quot;Just for test&quot;,&quot;title&quot;:&quot;Testing&quot;,&quot;body&quot;:&quot;My first test &quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;testing-maq7b9&quot;,&quot;updatedAt&quot;:&quot;2021-07-28T08:29:31.567Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-07-28T08:28:24.183Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/www.clipartmax.com\/png\/middle\/149-1498081_karate-cartoon-stock-photography-stock-illustration-karate-kid-icon.png&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;KarateKid&quot;},&quot;description&quot;:&quot;Just for test&quot;,&quot;title&quot;:&quot;Testing&quot;,&quot;body&quot;:&quot;My first test &quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;testing-1f3s9x&quot;,&quot;updatedAt&quot;:&quot;2021-07-28T08:28:24.183Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-07-28T08:26:55.706Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/www.clipartmax.com\/png\/middle\/149-1498081_karate-cartoon-stock-photography-stock-illustration-karate-kid-icon.png&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;KarateKid&quot;},&quot;description&quot;:&quot;For test&quot;,&quot;title&quot;:&quot;Test&quot;,&quot;body&quot;:&quot;My second test &quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;test-xv0awg&quot;,&quot;updatedAt&quot;:&quot;2021-07-28T08:26:55.706Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-07-28T08:26:54.843Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/www.clipartmax.com\/png\/middle\/149-1498081_karate-cartoon-stock-photography-stock-illustration-karate-kid-icon.png&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;KarateKid&quot;},&quot;description&quot;:&quot;Just for test&quot;,&quot;title&quot;:&quot;Testing&quot;,&quot;body&quot;:&quot;My first test &quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;testing-blmbe4&quot;,&quot;updatedAt&quot;:&quot;2021-07-28T08:26:54.843Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-07-28T08:25:02.061Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;Gunnar31&quot;},&quot;description&quot;:&quot;dsds&quot;,&quot;title&quot;:&quot;ds&quot;,&quot;body&quot;:&quot;dsds&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;ds-nqeht4&quot;,&quot;updatedAt&quot;:&quot;2021-07-28T08:25:02.061Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-07-28T08:24:25.376Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;Mac.Jast&quot;},&quot;description&quot;:&quot;What is moogle?&quot;,&quot;title&quot;:&quot;Moogle&quot;,&quot;body&quot;:&quot;Moogle is a fantastic creature that looks like a cat with a pompon and bat wings&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;moogle-anx0nj&quot;,&quot;updatedAt&quot;:&quot;2021-07-28T08:24:25.376Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-07-28T08:23:29.682Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/www.clipartmax.com\/png\/middle\/149-1498081_karate-cartoon-stock-photography-stock-illustration-karate-kid-icon.png&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;KarateKid&quot;},&quot;description&quot;:&quot;Just for test&quot;,&quot;title&quot;:&quot;Testing&quot;,&quot;body&quot;:&quot;My first test &quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;testing-qxj87&quot;,&quot;updatedAt&quot;:&quot;2021-07-28T08:23:29.682Z&quot;,&quot;favorited&quot;:false}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
