@@ -4,7 +4,6 @@ Feature: Tests for the Home Page
   Background: Define URL
     Given url 'https://conduit.productionready.io/api/'
 
-@debug
   Scenario: Get all tags
     Given path 'tags'
     When method Get
@@ -12,7 +11,6 @@ Feature: Tests for the Home Page
     And match response.tags contains ['Gandhi', 'HITLER']
     And match response.tags !contains 'Hitler'
 
-@debug
   Scenario: Get 10 articles from the page
     Given params { limit: 10, offset:0 }
     Given path 'articles'
