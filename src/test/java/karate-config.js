@@ -17,6 +17,8 @@ function fn() {
 
   if (env == 'e2e') {
     // user 2
+    config.userEmail = 'karatejar@test.com'
+    config.userPassword = 'KarateTesting123'
 
   }
 

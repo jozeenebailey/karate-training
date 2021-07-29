@@ -6,13 +6,24 @@ function fn() {
   }
   var config = {
     env: env,
-    myVarName: 'someValue'
+    myVarName: 'someValue',
+    apiUrl: 'https://conduit.productionready.io/api/'
   }
   if (env == 'dev') {
-    // customize
-    // e.g. config.foo = 'bar';
-  } else if (env == 'e2e') {
-    // customize
+    // user 1
+    config.userEmail = 'karatebailey@test.com'
+    config.userPassword = 'KarateTesting'
   }
+
+  if (env == 'e2e') {
+    // user 2
+    config.userEmail = 'karatejar@test.com'
+    config.userPassword = 'KarateTesting123'
+
+  }
+
+  var accessToken = karate.callSingle('classpath:helpers/CreateToken.feature', config).authToken
+  karate.configure('headers', {Authorization: 'Token ' + accessToken})
+
   return config;
 }
